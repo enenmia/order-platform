@@ -91,13 +91,13 @@ function getFeedHtml(){
         // })
         feedHtml+=`
             <div class="item-class">
-                <img src="./${item.name}.png" class="item-pic">
+                <img src="${item.name}.png" class="item-pic">
                 <div class="details">
                     <p class="item-title" id="${item.name}-title">${item.name}</p>
                     <p class="item-ingredients" data-ingredients="${item.id}">${item.ingredients}</p>
                     <p class="item-price" id="${item.name}-price">$<span>${item.price}</span></p>
                 </div>
-                <img src="./add-btn.png" class="add-btn" id="add-btn" data-addname="${item.name}" data-addprice="${item.price}">
+                <img src="add-btn.png" class="add-btn" id="add-btn" data-addname="${item.name}" data-addprice="${item.price}">
             </div>
 
         `
